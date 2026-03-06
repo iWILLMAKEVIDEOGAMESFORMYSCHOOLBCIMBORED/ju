@@ -1,0 +1,37 @@
+workflows:
+  ios-build:
+    name: FakeCash IPA
+    max_build_duration: 60
+    instance_type: mac_mini_m1
+    environment:
+      xcode: latest
+    scripts:
+      - name: Build archive
+        script: |
+          xcodebuild \
+            -project FakeCash.xcodeproj \
+            -scheme FakeCash \
+            -configuration Release \
+            -sdk iphoneos \
+            -archivePath "$CM_BUILD_DIR/FakeCash.xcarchive" \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO \
+            PRODUCT_BUNDLE_IDENTIFIER=com.hammerandchisel.fakecashyappy \
+            archive
+      - name: Export IPA
+        script: |
+          mkdir -p "$CM_BUILD_DIR/ipa"
+          cd "$CM_BUILD_DIR/FakeCash.xcarchive/Products/Applications"
+          mkdir -p Payload
+          cp -r FakeCash.app Payload/
+          zip -r "$CM_BUILD_DIR/ipa/FakeCash.ipa" Payload/
+    artifacts:
+      - $CM_BUILD_DIR/ipa/*.ipa
+    publishing:
+      email:
+        recipients:
+          - your@email.com
+        notify:
+          success: true
+          failure: true

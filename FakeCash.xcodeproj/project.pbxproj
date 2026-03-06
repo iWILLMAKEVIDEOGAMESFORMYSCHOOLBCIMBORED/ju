@@ -1,0 +1,201 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F101 /* FakeCashApp.swift in Sources */        = {isa = PBXBuildFile; fileRef = F001; };
+		F102 /* AccountModel.swift in Sources */       = {isa = PBXBuildFile; fileRef = F002; };
+		F103 /* ContentView.swift in Sources */        = {isa = PBXBuildFile; fileRef = F003; };
+		F104 /* MoneyView.swift in Sources */          = {isa = PBXBuildFile; fileRef = F004; };
+		F105 /* CardDetailView.swift in Sources */     = {isa = PBXBuildFile; fileRef = F005; };
+		F106 /* SendView.swift in Sources */           = {isa = PBXBuildFile; fileRef = F006; };
+		F107 /* NotificationsView.swift in Sources */  = {isa = PBXBuildFile; fileRef = F007; };
+		F108 /* EditAccountSheet.swift in Sources */   = {isa = PBXBuildFile; fileRef = F008; };
+		F109 /* Extensions.swift in Sources */         = {isa = PBXBuildFile; fileRef = F009; };
+		F110 /* Assets.xcassets in Resources */        = {isa = PBXBuildFile; fileRef = F010; };
+		F111 /* AddMoneyView.swift in Sources */       = {isa = PBXBuildFile; fileRef = F011b; };
+		F111 /* AddMoneyView.swift in Sources */      = {isa = PBXBuildFile; fileRef = F011b; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F000 /* FakeCash.app */           = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FakeCash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F001 /* FakeCashApp.swift */      = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeCashApp.swift; sourceTree = "<group>"; };
+		F002 /* AccountModel.swift */     = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
+		F003 /* ContentView.swift */      = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F004 /* MoneyView.swift */        = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyView.swift; sourceTree = "<group>"; };
+		F005 /* CardDetailView.swift */   = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
+		F006 /* SendView.swift */         = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendView.swift; sourceTree = "<group>"; };
+		F007 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		F008 /* EditAccountSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAccountSheet.swift; sourceTree = "<group>"; };
+		F009 /* Extensions.swift */       = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F010 /* Assets.xcassets */        = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F011b /* AddMoneyView.swift */    = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMoneyView.swift; sourceTree = "<group>"; };
+		F011 /* Info.plist */             = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F011b /* AddMoneyView.swift */    = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMoneyView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F020 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F030 = {
+			isa = PBXGroup;
+			children = (F031, F032);
+			sourceTree = "<group>";
+		};
+		F031 = {
+			isa = PBXGroup;
+			children = (F001,F002,F003,F004,F005,F006,F007,F008,F009,F010,F011,F011b);
+			path = FakeCash;
+			sourceTree = "<group>";
+		};
+		F032 = {isa = PBXGroup; children = (F000); name = Products; sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F040 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F050;
+			buildPhases = (F021, F020, F022);
+			buildRules = ();
+			dependencies = ();
+			name = FakeCash;
+			productName = FakeCash;
+			productReference = F000;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F060 = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = { F040 = { CreatedOnToolsVersion = 15.0; }; };
+			};
+			buildConfigurationList = F061;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (en, Base);
+			mainGroup = F030;
+			productRefGroup = F032;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (F040);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F022 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (F110); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F021 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (F101,F102,F103,F104,F105,F106,F107,F108,F109,F111);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F070 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F072 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = FakeCash/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks");
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hammerandchisel.fakecashyappy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = FakeCash/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks");
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hammerandchisel.fakecashyappy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F050 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (F072, F073);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F061 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (F070, F071);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = F060;
+}
